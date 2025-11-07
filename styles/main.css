@@ -13,11 +13,16 @@ main {
 */
 .main_info {
     display: flex;
-    align-items: flex-start;
     
     width: 100%;
     max-width: 500px;
 
+    column-gap: 20px;
+}
+
+.agent_box {
+    display: flex;
+    align-items: flex-start;
     column-gap: 20px;
 }
 
@@ -29,6 +34,11 @@ main {
 
 .agent_info p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
 }
