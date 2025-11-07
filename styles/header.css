@@ -1,0 +1,82 @@
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+
+    width: 100%;
+    max-width: 1500px;
+
+    padding-top: 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    justify-content: center;
+}
+
+.navigation_links {
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.navigation_links:hover {
+    color: var(--orange);
+    transition: 0.2s;
+}
+
+.navigation_links::after { /*EFEITO BARRINHA EMBAIXO DOS LINKS - PSEUDOELEMTNO*/ 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+
+    width: 50%;
+    height: 1.5px;
+    background: var(--orange);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_links:hover::after {
+
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+.navigation_social {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    column-gap: 20px;
+}
+
+.navigation_social svg {
+    width: 20px;
+    height: auto;
+
+    opacity: 0.6;
+
+    transition: all 0.2s;
+}
+
+.navigation_social svg:hover{
+    transform: translateY(-5px);
+    opacity: 1;
+}

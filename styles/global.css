@@ -1,3 +1,6 @@
+@import url('background.css');
+@import url('header.css');
+@import url('main.css');
 * {
   padding: 0;
   margin: 0;
@@ -6,15 +9,14 @@
 
 :root {
   --text: #EDF1F7;
-  --red: #C51212;
-  --blue: #0041C2;
-  --green: #14B02D;
-  --yellow: #ffc12b;
+  --orange: #f55114;
+  --blue: #4a60b6;
+  --darkblue: #39386d;
 }
 
 body, button, a {
   color: var(--text);
-  font: 400 1rem "Mukta", sans-serif;
+  font: 400 1rem "VALORANT", sans-serif;
 }
 
 a {
@@ -23,4 +25,17 @@ a {
 
 button:hover {
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+#aplicacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
 }

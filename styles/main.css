@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1500px;
+
+    margin-top: 30px;
+}
+/*
+    COLOCAR IMAGEM DO LADO DO PARÁGRAFO E BOTÕES EMBAIXO ESTILO VALORANT
+*/
+.main_info {
+    display: flex;
+    align-items: flex-start;
+    
+    width: 100%;
+    max-width: 500px;
+
+    column-gap: 20px;
+}
+
+.agent_box img{
+    border: 3px solid grey;
+    background: lightgrey;
+
+}
+
+.agent_info p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    font-size: 15px;
+
+}
