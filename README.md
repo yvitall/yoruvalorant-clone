@@ -1,14 +1,10 @@
 <h1 align="center">
-  Site do filme Mario Bros
+  Site do Yoru - Agente do Valorant
 </h1>
 
 <p align="center">
   <img src=".github/preview.png" width="100%" />
 </p>
-
-## 💻 Projeto
-
-Este projeto é um tutorial que ensina a como criar o site do filme **Mario Bros** ao usar _HTML_ e _CSS_.
 
 ## 🚀 Tecnologias
 
@@ -30,9 +26,3 @@ Este projeto é um tutorial que ensina a como criar o site do filme **Mario Bros
 
 - [ ] Criar responsividade
 - [ ] Adicionar efeito de hover nos botões
-
-## 📺 Tutorial no Youtube
-
-<a href="https://www.youtube.com/watch?v=6Ok-kUrBGp8" target="_blank">
- <img src="https://img.youtube.com/vi/6Ok-kUrBGp8/maxresdefault.jpg" width="100%" height="auto" />
-</a>
