@@ -4,13 +4,13 @@ header {
     column-gap: 64px;
 
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
 
     padding-top: 20px;
 }
 
 header img {
-    width: 100px;
+    width: 80px;
     height: auto;
     margin-right: auto;
 }
@@ -23,20 +23,26 @@ header img {
 }
 
 .navigation_links {
+    display: inline-block;
     font-size: 13px;
     font-weight: 200;
     letter-spacing: 8px;
     text-transform: uppercase;
 
-    position: relative;
+    opacity: 0.6;
+
+    transition: all 0.2s;
 }
 
 .navigation_links:hover {
     color: var(--orange);
-    transition: 0.2s;
-}
+    transform: translateY(-5px);
 
-.navigation_links::after { /*EFEITO BARRINHA EMBAIXO DOS LINKS - PSEUDOELEMTNO*/ 
+
+    opacity: 1;
+}
+/*
+.navigation_links::after { EFEITO BARRINHA EMBAIXO DOS LINKS - PSEUDOELEMENTO
     content: '';
     position: absolute;
     left: 0;
@@ -57,6 +63,7 @@ header img {
     transform-origin: left;
     transition: transform 0.4s;
 }
+*/
 
 .navigation_social {
     margin-left: auto;

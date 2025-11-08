@@ -4,26 +4,32 @@ main {
     justify-content: space-between;
 
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
 
-    margin-top: 30px;
+    margin: 30px 150px;
 }
 /*
     COLOCAR IMAGEM DO LADO DO PARÁGRAFO E BOTÕES EMBAIXO ESTILO VALORANT
 */
 .main_info {
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
+
     width: 100%;
     max-width: 500px;
-
-    column-gap: 20px;
-}
+}   
 
 .agent_box {
     display: flex;
-    align-items: flex-start;
-    column-gap: 20px;
+    align-items: stretch;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    width: 100%;
+
+    flex: 1;
 }
 
 .agent_box img{
@@ -32,13 +38,50 @@ main {
 
 }
 
-.agent_info p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
-    font-size: 16px;
+.agent_info p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+
+    margin: 0;
+
 
 }
 
-.btn {
+.links {
     display: flex;
     justify-content: center;
+    
+    width: 100%;
+    margin-top: 30px;
+    gap: 30px;
+
+    transform: translateX(-10px);
 }
+
+.links a {
+    position: relative;
+    padding: 15px;
+
+    background: var(--orange);
+    border: 1.5px solid transparent;
+   
+}
+
+.links a::after {
+    position: absolute;
+    content: '';
+    
+    border: 1.5px solid white;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+}
+
+.links a:hover {
+    background: #ffffff;
+    color: var(--orange);
+
+    transition: 0.3s;
+}
+
